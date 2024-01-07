@@ -10,4 +10,9 @@ public class Teacher implements Person {
     public void say() {
         System.out.println("老师发言了");
     }
+
+    @Override
+    public void eat() {
+        System.out.println("老师吃饭喽");
+    }
 }
