@@ -7,5 +7,6 @@ public class Application {
         AnnotationConfigApplicationContext annotationConfigApplicationContext = new AnnotationConfigApplicationContext(SpringConfig.class);
         Person person = annotationConfigApplicationContext.getBean(Person.class);
         person.say();
+
     }
 }
