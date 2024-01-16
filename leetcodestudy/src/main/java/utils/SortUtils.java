@@ -18,6 +18,7 @@ public class SortUtils {
         min = nums[nums.length-1];
         System.out.println("找到最大值方法一："+ min);
 
+
         min = Arrays.stream(nums).max().getAsInt();
         System.out.println("找到最大值方法二："+ min);
 
