@@ -1,12 +1,11 @@
 package classfyone.easy;
 
-import utils.StringUtils;
+import com.utils.StringUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * 题目：赎金信

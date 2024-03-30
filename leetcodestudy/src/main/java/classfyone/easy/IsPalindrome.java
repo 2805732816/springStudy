@@ -1,11 +1,7 @@
 package classfyone.easy;
 
-import utils.StringUtils;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Locale;
 
 /**
  * 题目：验证回文串

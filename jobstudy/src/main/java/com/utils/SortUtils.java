@@ -1,9 +1,6 @@
-package utils;
-
-import sun.security.util.ArrayUtil;
+package com.utils;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 public class SortUtils {
     /**

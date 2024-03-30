@@ -8,12 +8,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="aopstudy2" />
+        <module name="jobstudy" />
         <module name="leetcodestudy" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="aopstudy" target="8" />
       <module name="aopstudy2" target="8" />
+      <module name="jobstudy" target="8" />
       <module name="leetcodestudy" target="8" />
     </bytecodeTargetLevel>
   </component>
@@ -21,6 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="aopstudy" options="-parameters" />
       <module name="aopstudy2" options="-parameters" />
+      <module name="jobstudy" options="-parameters" />
     </option>
   </component>
 </project>

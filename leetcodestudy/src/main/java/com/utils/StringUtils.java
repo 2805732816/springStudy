@@ -1,4 +1,4 @@
-package utils;
+package com.utils;
 
 public class StringUtils {
     public static String stingArrayToString(String[] strs){

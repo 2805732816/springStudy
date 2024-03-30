@@ -1,11 +1,13 @@
-package utils;
+package com.utils;
 
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
+import lombok.extern.slf4j.Slf4j;
 import java.util.Objects;
 
+
+@Slf4j
 public class JsonUtils {
     /**
      * 包含非空字段
@@ -26,11 +28,25 @@ public class JsonUtils {
     }
 
 
-    public static String simpleToString(Object data){
+    /**
+     * 序列化
+     * @param data
+     * @return
+     */
+    public static String transferObjectToString(Object data){
         if(Objects.isNull(data)){
             return null;
         }
         return JSONObject.toJSONString(data, SerializerFeature.IgnoreNonFieldGetter);
+    }
+
+    public static <T> T transferStringToClass(String data, Class<T> targetClass){
+        try {
+            return OBJECT_MAPPER_INCLUDE_NULL.readValue(data,targetClass);
+        }catch (Exception e){
+            return null;
+        }
+
     }
 
 

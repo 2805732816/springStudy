@@ -1,6 +1,6 @@
 package classfyone.easy;
 
-import utils.StringUtils;
+import com.utils.StringUtils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
