@@ -1,0 +1,3 @@
+retrofit:
+  server:
+    bdUrl: "https://www.baidu.com"

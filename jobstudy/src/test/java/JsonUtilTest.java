@@ -15,8 +15,6 @@ public class JsonUtilTest extends BaseTest{
         System.out.println(string);
         JSONObject jsonObject1 = JsonUtils.transferStringToClass(string,JSONObject.class);
         System.out.println(jsonObject1);
-
-
     }
 
 }
