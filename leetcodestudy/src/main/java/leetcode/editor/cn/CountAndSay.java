@@ -7,10 +7,7 @@ package leetcode.editor.cn;
 // countAndSay(1) = "1" 
 // countAndSay(n) 是 countAndSay(n-1) 的行程长度编码。 
 // 
-//
-// 
-//
-// 
+/
 // 
 //
 // 行程长度编码（RLE）是一种字符串压缩方法，其工作原理是通过将连续相同字符（重复两次或更多次）替换为字符重复次数（运行长度）和字符的串联。例如，要压缩字符
