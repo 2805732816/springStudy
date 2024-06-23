@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="aopstudy2" />
         <module name="jobstudy" />
+        <module name="testngstudy" />
         <module name="leetcodestudy" />
       </profile>
     </annotationProcessing>
@@ -17,6 +18,7 @@
       <module name="aopstudy2" target="8" />
       <module name="jobstudy" target="8" />
       <module name="leetcodestudy" target="8" />
+      <module name="testngstudy" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
