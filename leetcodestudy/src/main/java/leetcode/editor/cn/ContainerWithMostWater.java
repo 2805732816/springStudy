@@ -5,6 +5,7 @@ package leetcode.editor.cn;
 public class ContainerWithMostWater{
     public static void main(String[] args) {
         Solution solution = new ContainerWithMostWater().new Solution();
+        solution.maxArea(new int[]{2,3,10,5,7,8,9});
         
     }
  
@@ -18,15 +19,17 @@ class Solution {
         while (left<right){
             int low = Math.min(height[left],height[right]);
             int currentWater = (right-left)*low;
-            maxWater = Math.min(currentWater,maxWater);
+            maxWater = Math.max(currentWater,maxWater);
             if(height[left]<height[right]){
                 do {
                     left++;
-                }while (height[low]>height[left]);
+                    //注意数组越界问题
+                }while (left<height.length-1 && low>height[left]);
             }else {
                 do {
                     right--;
-                }while (height[low]>height[right]);
+                    //注意数组越界问题
+                }while (right>0 && low>height[right]);
             }
         }
         return maxWater;
