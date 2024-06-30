@@ -20,6 +20,7 @@ class Solution {
             int low = Math.min(height[left],height[right]);
             int currentWater = (right-left)*low;
             maxWater = Math.max(currentWater,maxWater);
+            //一定得是高度更低的一端开始移动，高度高的一段移动后存水量一定小于目前的，参考currentWater公式
             if(height[left]<height[right]){
                 do {
                     left++;
